@@ -1,6 +1,6 @@
 # Simple App
 
-Small demo application to showcase my DevOps skills (Docker, CI/CD, remote deployment).
+Small demo application.
 
 ## Stack
 
@@ -27,7 +27,7 @@ uvicorn app.main:app --reload
 ## Run with Docker
 
 ```bash
-docker build -t devops-portfolio-app -f docker/Dockerfile .
+docker build -t test -f docker/Dockerfile .
 docker run -p 8000:8000 devops-portfolio-app
 ```
 
