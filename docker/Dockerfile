@@ -1,4 +1,4 @@
-# Stage 1: build (установка зависимостей)
+# Stage 1: build (dependencies installation)
 FROM python:3.10-slim AS builder
 
 ENV PYTHONDONTWRITEBYTECODE=1 \

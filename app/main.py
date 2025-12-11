@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-app = FastAPI(title="DevOps Portfolio App")
+app = FastAPI(title="Simple App")
 
 
 @app.get("/health")
