@@ -28,7 +28,7 @@ uvicorn app.main:app --reload
 
 ```bash
 docker build -t test -f docker/Dockerfile .
-docker run -p 8000:8000 devops-portfolio-app
+docker run -p 8000:8000 test
 ```
 
 ## Production (server)
