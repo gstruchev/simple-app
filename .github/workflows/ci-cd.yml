@@ -5,6 +5,7 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
@@ -40,7 +41,7 @@ jobs:
           context: .
           file: docker/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/devops-portfolio-app:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/small-app:latest
 
       - name: Deploy to server via SSH
         uses: appleboy/ssh-action@v1.0.3
