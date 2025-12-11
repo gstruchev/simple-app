@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+.env/
+
+# IDE
+.idea/
+.vscode/
+
+# Docker artifacts
+*.log
+*.pid
+
+# pytest cache
+.pytest_cache/
