@@ -41,7 +41,7 @@ jobs:
           context: .
           file: docker/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/small-app:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/simple-app:latest
       
       - name: Copy docker-compose file to server
         uses: appleboy/scp-action@v1
