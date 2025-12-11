@@ -19,10 +19,10 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 WORKDIR /app
 
-# скопировать установленные зависимости
+# Copy installed dependencies
 COPY --from=builder /install /usr/local
 
-# копируем код приложения
+# Copy app code
 COPY app/ app/
 
 EXPOSE 8000
