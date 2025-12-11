@@ -44,7 +44,7 @@ jobs:
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/small-app:latest
       
       - name: Copy docker-compose file to server
-        uses: appleboy/scp-action@v1.0.3
+        uses: appleboy/scp-action@v1
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
