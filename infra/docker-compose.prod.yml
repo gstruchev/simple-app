@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   app:
-    image: ${{ secrets.DOCKERHUB_USERNAME }}/simple-app:latest
+    image: gstruchev/simple-app:latest
     container_name: simple-app
     restart: always
     expose:
